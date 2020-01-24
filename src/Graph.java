@@ -4,6 +4,7 @@ public class Graph {
     private int vertexCount;
     private int edgeCount = 0;
     private LinkedList<Integer>[] adjList;
+    
 
     public Graph(int vertexCount) {
         if (vertexCount < 0) {
