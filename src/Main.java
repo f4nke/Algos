@@ -11,6 +11,7 @@ public class Main {
         System.out.println(map);
         map.remove(2);
         System.out.println(map);
+
         /*
         вывод на консоль:
         1, 2, 3, 4, 5,
