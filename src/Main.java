@@ -1,21 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        Graph graph = new Graph(10);
-
-        graph.addEdge(1,2);
-        graph.addEdge(0,4);
-        graph.addEdge(1,4);
-        graph.addEdge(3,4);
-        graph.addEdge(1,3);
-        graph.addEdge(4,5);
-        graph.addEdge(4,6);
-        graph.addEdge(1,5);
-        graph.addEdge(5,7);
-        graph.addEdge(2,8);
-
-        BreadthPath bp = new BreadthPath(graph, 2);
-        System.out.println(bp.pathTo(7));
+        Chain<Integer, String> map = new Chain<>();
+        map.put(1, "one");
+        map.put(2, "two");
+        map.put(3, "three");
+        map.put(4, "four");
+        map.put(5, "five");
 
 
+        System.out.println(map);
+        map.remove(2);
+        System.out.println(map);
+        /*
+        вывод на консоль:
+        1, 2, 3, 4, 5,
+        1, 3, 4, 5,
+         */
     }
 }
